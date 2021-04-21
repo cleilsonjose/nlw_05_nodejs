@@ -1,4 +1,5 @@
 import express from "express";
+import "./database";
 
 const app = express();
 
@@ -11,4 +12,4 @@ app.post('/', (req, res) => {
    return res.json({ message: "Usuário salvo com sucesso!" });
 });
 
-app.listen(3333, () => console.log("Server is running on port 3333"))
+app.listen(3333, () => console.log("Server is running on port 3333"));
